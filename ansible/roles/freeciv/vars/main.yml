@@ -1,0 +1,4 @@
+---
+freeciv_packages:
+  - name: freeciv-nox11
+  - name: tmux

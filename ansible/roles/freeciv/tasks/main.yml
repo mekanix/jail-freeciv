@@ -1,0 +1,10 @@
+---
+- name: install packages
+  with_items: "{{ freeciv_packages }}"
+  package:
+    name: "{{ item.name }}"
+
+- name: create freeciv user
+  user:
+    name: freeciv
+    shell: /bin/tcsh
